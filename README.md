@@ -98,7 +98,7 @@ The one constant through every step: the overlay only ever draws pixels on top o
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+
 *Explain what the video demonstrates*
 
 # Additional Demos
