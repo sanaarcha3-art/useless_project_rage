@@ -4,7 +4,7 @@
 
 
 ## Basic Details
-### Team Name: [Your Team Name]
+### Team Name: Stitch & Lilo
 
 
 ### Team Members
