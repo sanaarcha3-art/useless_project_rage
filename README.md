@@ -59,43 +59,42 @@ For Software:
 # Screenshots
 
 ![Screenshot1]
+*Smash the screen with a hammer, causing it to crack.*
 
 <img width="1917" height="1078" alt="1" src="https://github.com/user-attachments/assets/223eea52-59a7-4edc-8abf-538285c87fe7" />
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]
+*Creating an explosion on the screen.s*
 
 <img width="1917" height="1078" alt="Screenshot 2026-09-12 021153" src="https://github.com/user-attachments/assets/fb9177d9-23a4-4ac1-b2c6-fff75f7f4111" />
 
-![Screenshot3](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3]
+*Set the screen on fire, causing it to burn.*
 
 <img width="1917" height="1078" alt="Screenshot 2026-09-12 021226" src="https://github.com/user-attachments/assets/bd4afd59-fd1f-4699-8aab-3f2d3fb8336d" />
 
 
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Workflow]
+<img width="2720" height="2768" alt="ragedesk_workflow_diagram" src="https://github.com/user-attachments/assets/2e80de3d-21d2-40f3-9a57-2ae04df035c0" />
 
-For Hardware:
+*Here's the full flow in words, start to finish:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+**1. Idle in the tray.** RageDesk launches with no visible window — it just sits in the system tray, using almost no CPU, waiting for one of two things: a hotkey press or a tray-menu click.
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+**2. Hotkey toggles Rage Mode.** Pressing `Ctrl+Shift+R` (or clicking "Activate Rage Mode" in the tray menu) spins up a transparent, borderless, always-on-top window covering the screen. The real desktop stays fully visible underneath — nothing is hidden, paused, or modified.
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
+**3. Rage Mode is active.** Once the overlay is up, it becomes the only thing receiving mouse and keyboard input. A minimal HUD shows the current tool, rage score, and combo. From here the user picks one of two input paths:
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+- **Mouse & keyboard** — click a tool (Hammer, Drill, Axe, Paintball, Explosion, Black Hole, Eraser, Fire) via number keys 1–8 or the tool bar, then click/hold on the overlay to use it.
+- **Webcam gestures** — if enabled, a punch, finger-gun, two-hand explosion, or two-fingers-to-temple gesture fires the equivalent effect without touching the mouse at all.
 
-![Final](Add photo of final product here)
-*Explain the final build*
+**4. Effects render, score updates.** Whichever input triggered it, the same effect pipeline runs: cracks, particles, screen shake, sound, and (for persistent tools like Paintball or Fire) damage that stays on screen. The HUD's rage score and combo multiplier update live.
+
+**5. Two ways out.** Pressing `R` clears every visual effect and resets the score to zero, but keeps Rage Mode running so the user can keep going. Pressing `Escape` tears the whole overlay down instantly — effects gone, sounds stopped, input hooks released — and drops the user straight back to state 1, idle in the tray, with the real desktop exactly as it was.
+
+The one constant through every step: the overlay only ever draws pixels on top of the desktop. No click, keystroke, or gesture is ever forwarded to a real window, file, or process underneath.*
 
 ### Project Demo
 # Video
@@ -106,9 +105,17 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Aarcha S Nair]: [Designed and built the transparent, borderless, always-on-top overlay shell (Phase 1)
+Implemented global hotkey registration and toggle logic (Ctrl+Shift+R)
+Built the mouse/keyboard input layer and tool-switching system (number keys 1–8, tool bar)
+Handled the tray icon, background process lifecycle, and clean Escape/exit teardown (no leaked windows or input hooks)
+Implemented desktop-aware window detection and visual "target window" destruction (Phase 6)]
+- [Mishal S]: [Built the particle/damage rendering system: cracks, screen shake, smoke, and per-tool effects (Hammer, Drill, Axe, Paintball, Explosion, Black Hole, Fire)
+Designed the rage score, combo multiplier, and achievement system
+Integrated webcam-based gesture recognition (punch, finger-gun, two-hand explosion, "mind blown" temple gesture) using local hand-landmark tracking
+Built the HUD, settings screen, and overall glassmorphic dark UI styling
+Handled audio: sound effects, mute toggle, and per-action cues]
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
