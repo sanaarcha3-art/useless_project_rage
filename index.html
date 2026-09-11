@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RageDesk</title>
+  <style>
+    /* Reset */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+    /* The html/body must be fully transparent so the OS sees the overlay as
+       see-through. The actual "opaque to hit-tester" layer is painted on the
+       canvas with rgba(0,0,0,1) — one alpha unit, invisible to the human eye
+       but enough to make the entire window surface catch mouse events. */
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: transparent !important;
+      /* Prevent text selection / context menus on the overlay */
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: crosshair;
+    }
+
+    #app {
+      position: fixed;
+      inset: 0;
+      /* overflow hidden prevents scrollbars appearing during screen-shake transforms */
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
