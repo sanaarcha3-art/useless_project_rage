@@ -13,7 +13,13 @@
 
 
 ### Project Description
-A desktop application that lets you completely destroy your Windows desktop with an arsenal of tools like hammers, drills, fire, and black holes—without actually harming a single file or application underneath. 
+RageDesk — because sometimes "force quit" just doesn't hit hard enough.
+
+Ever wanted to hammer your desktop into oblivion, drill a hole through Chrome, or nuke your inbox with a black hole — without your IT department finding out? RageDesk is a completely fake, completely satisfying virtual rage room that lives on top of your actual screen. Hit a hotkey, and suddenly your real desktop is covered in cracks, paint, fire, and explosions... that aren't actually there. Your files are safe. Your apps are safe. Your dignity, less so, especially once you unlock Finger-Guns Mode and start bullet-holing your own spreadsheets.
+
+Got a webcam? Even better — throw an actual punch at your monitor, pull off a two-hand explosion gesture like you're in a Michael Bay film, or hold two fingers to your temple for the coveted MIND = BLOWN achievement (side effects include a screen-sized cartoon explosion and mild ego repair).
+
+Smash. Drill. Combo. Reset. Press Escape. Go back to pretending you're a calm, professional adult.
 
 ### The Problem (that doesn't exist)
 Sometimes, your code won't compile, your browser freezes, or you get *that* email from your boss. Naturally, the only logical response is to take a physical sledgehammer and smash your monitor into a thousand pieces. But monitors are expensive, and HR heavily frowns upon property destruction.
@@ -50,7 +56,10 @@ npx electron-builder --win --dir
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
+
+![Screenshot1]
+
 <img width="1917" height="1078" alt="1" src="https://github.com/user-attachments/assets/223eea52-59a7-4edc-8abf-538285c87fe7" />
 
 ![Screenshot1](Add screenshot 1 here with proper name)
@@ -58,13 +67,12 @@ For Software:
 
 <img width="1917" height="1078" alt="Screenshot 2026-09-12 021153" src="https://github.com/user-attachments/assets/fb9177d9-23a4-4ac1-b2c6-fff75f7f4111" />
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![Screenshot3](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
 <img width="1917" height="1078" alt="Screenshot 2026-09-12 021226" src="https://github.com/user-attachments/assets/bd4afd59-fd1f-4699-8aab-3f2d3fb8336d" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
