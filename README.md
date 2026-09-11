@@ -48,11 +48,17 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
+<img width="1917" height="1078" alt="1" src="https://github.com/user-attachments/assets/223eea52-59a7-4edc-8abf-538285c87fe7" />
+
 ![Screenshot1](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
+<img width="1917" height="1078" alt="Screenshot 2026-09-12 021153" src="https://github.com/user-attachments/assets/fb9177d9-23a4-4ac1-b2c6-fff75f7f4111" />
+
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
+
+<img width="1917" height="1078" alt="Screenshot 2026-09-12 021226" src="https://github.com/user-attachments/assets/bd4afd59-fd1f-4699-8aab-3f2d3fb8336d" />
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
