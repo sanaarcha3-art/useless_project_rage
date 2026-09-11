@@ -1,45 +1,41 @@
 <img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
-
-
-# [Project Name] 🎯
+# RageDesk 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Your Team Name]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
+- Team Lead: [Your Name] - [College]
 - Member 2: [Name] - [College]
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+A desktop application that lets you completely destroy your Windows desktop with an arsenal of tools like hammers, drills, fire, and black holes—without actually harming a single file or application underneath. 
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Sometimes, your code won't compile, your browser freezes, or you get *that* email from your boss. Naturally, the only logical response is to take a physical sledgehammer and smash your monitor into a thousand pieces. But monitors are expensive, and HR heavily frowns upon property destruction.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+A transparent, invisible desktop overlay that turns your actual screen into a destructible playground! Using your mouse—or actual hand gestures via your webcam—you can smash your screen with a hammer, burn your desktop with realistic spreading fire, or open a black hole to suck away your problems. When you're done throwing a tantrum, simply press `ESC`, and your desktop is instantly pristine again as if nothing ever happened!
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- **Languages used:** TypeScript, HTML5, CSS3
+- **Frameworks used:** Electron.js, Vite
+- **Libraries used:** Pixi.js (for high-performance WebGL 2D rendering and particle physics), Howler.js (for audio), MediaPipe Tasks Vision (for AI webcam gesture recognition).
+- **Tools used:** npm, electron-builder, PowerShell (for Win32 window context enumeration)
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+bash
+git clone https://github.com/your-username/ragedesk.git
+cd ragedesk
+npm install
 
 # Run
 [commands]
