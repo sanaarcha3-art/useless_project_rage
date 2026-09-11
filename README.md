@@ -33,7 +33,7 @@ For Software:
 For Software:
 # Installation
 bash
-git clone https://github.com/your-username/ragedesk.git
+git clone https://github.com/sanaarcha3-art/useless_project_rage.git
 cd ragedesk
 npm install
 
