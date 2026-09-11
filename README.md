@@ -38,10 +38,10 @@ cd ragedesk
 npm install
 
 # Run
-# To run in development mode:
+#To run in development mode:
 npm run electron:dev
 
-# To build the final Windows executable:
+#To build the final Windows executable:
 npm run electron:build
 
 #If you just want a portable .exe folder without an installer
