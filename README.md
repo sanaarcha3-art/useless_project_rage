@@ -8,9 +8,9 @@
 
 
 ### Team Members
-- Team Lead: [Your Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Aarcha S Nair - Lourdes Matha Collage Of Science And Technology
+- Member 2: Mishal S- Lourdes Matha Collage Of Science And Technology
+
 
 ### Project Description
 A desktop application that lets you completely destroy your Windows desktop with an arsenal of tools like hammers, drills, fire, and black holes—without actually harming a single file or application underneath. 
