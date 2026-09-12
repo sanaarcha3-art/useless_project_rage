@@ -51,7 +51,7 @@ npm run electron:dev
 npm run electron:build
 
 #If you just want a portable .exe folder without an installer
-npx electron-builder --win --dir
+npm run electron:portable
 
 ### Project Documentation
 For Software:
