@@ -61,17 +61,20 @@ For Software:
 ![Screenshot1]
 *Smash the screen with a hammer, causing it to crack.*
 
-<img width="1917" height="1078" alt="1" src="https://github.com/user-attachments/assets/223eea52-59a7-4edc-8abf-538285c87fe7" />
+<img width="1588" height="1077" alt="Screenshot 2026-09-12 053012" src="https://github.com/user-attachments/assets/8b00a08e-ac48-44a0-b8bc-45a4fed09081" />
+
 
 ![Screenshot2]
 *Creating an explosion on the screen.s*
 
-<img width="1917" height="1078" alt="Screenshot 2026-09-12 021153" src="https://github.com/user-attachments/assets/fb9177d9-23a4-4ac1-b2c6-fff75f7f4111" />
+<img width="1576" height="1073" alt="Screenshot 2026-09-12 053056" src="https://github.com/user-attachments/assets/ebc5158f-1200-4ea9-8579-cc4c2014893b" />
+
 
 ![Screenshot3]
 *Set the screen on fire, causing it to burn.*
 
-<img width="1917" height="1078" alt="Screenshot 2026-09-12 021226" src="https://github.com/user-attachments/assets/bd4afd59-fd1f-4699-8aab-3f2d3fb8336d" />
+<img width="1591" height="1078" alt="Screenshot 2026-09-12 053202" src="https://github.com/user-attachments/assets/dc77d6b4-da81-42e7-aed9-587f714f2ab5" />
+
 
 
 
