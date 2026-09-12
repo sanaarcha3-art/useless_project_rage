@@ -44,11 +44,8 @@ cd ragedesk
 npm install
 
 # Run
-#To run in development mode:
-npm run electron:dev
-
-#To build the final Windows executable:
-npm run electron:build
+#To install esbild
+npm install -D esbuild
 
 #If you just want a portable .exe folder without an installer
 npm run electron:portable
