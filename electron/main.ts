@@ -111,6 +111,9 @@ function openOverlay() {
     overlayWin?.setIgnoreMouseEvents(false)
     updateTray()
   })
+  overlayWin.webContents.on('console-message', (_e, level, message, line, source) => {
+    console.log(`[Renderer Console] ${message}`)
+  })
 }
 function closeOverlay() {
   if (!overlayWin || overlayWin.isDestroyed()) return
@@ -143,6 +146,10 @@ app.whenReady().then(() => {
   session.defaultSession.setPermissionRequestHandler((_webContents, permission, callback) => {
     if (permission === 'media') callback(true)
     else callback(false)
+  })
+  session.defaultSession.setPermissionCheckHandler((_webContents, permission) => {
+    if (permission === 'media') return true
+    return false
   })
 
   createTray()

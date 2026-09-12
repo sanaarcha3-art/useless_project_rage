@@ -162,6 +162,7 @@ export class FireTool extends BaseTool {
       }
 
       if (flames.length === 0 && elapsed > MAX_TIME) {
+        this.audio.stop('fire_loop')
         this.overlay.ticker.remove(tick)
         container.parent?.removeChild(container)
         container.destroy()

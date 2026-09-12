@@ -128,14 +128,15 @@ export class HUD {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 10px 24px;
-        background: rgba(0, 0, 0, 0.7);
-        border: 1px solid rgba(255,255,255,0.15);
-        border-radius: 8px;
+        padding: 16px 36px;
+        background: rgba(0, 0, 0, 0.85);
+        border: 2px solid rgba(255,255,255,0.25);
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.8);
         color: #fff;
         font-family: 'Segoe UI', system-ui, sans-serif;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
         pointer-events: none;
         z-index: 10000;
       }

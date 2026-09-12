@@ -28,7 +28,7 @@ const DEFAULTS: Settings = {
   startWithWindows: false,
   overlayOpacity: 1.0,
   targetMonitor: 'primary',
-  gesturesEnabled: false,
+  gesturesEnabled: true,
 }
 
 const STORAGE_KEY = 'ragedesk_settings'

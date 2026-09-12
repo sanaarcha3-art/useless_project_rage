@@ -14,6 +14,7 @@ export class SettingsScreen {
     this.settings = settings; this.audio = audio
     this.injectStyles()
     window.rageDesk.onOpenSettings(() => this.toggle())
+    window.addEventListener('open-settings-ui', () => this.toggle())
   }
 
   toggle() { this.visible ? this.hide() : this.show() }

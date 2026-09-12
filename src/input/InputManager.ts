@@ -8,8 +8,8 @@ import { AchievementTracker } from './AchievementTracker'
 import { Tool } from '../tools/Tool'
 import { HammerTool } from '../tools/HammerTool'
 import { DrillTool } from '../tools/DrillTool'
-import { AxeTool } from '../tools/AxeTool'
-import { PaintballTool } from '../tools/PaintballTool'
+import { EggTool } from '../tools/EggTool'
+import { GunTool } from '../tools/GunTool'
 import { ExplosionTool } from '../tools/ExplosionTool'
 import { BlackHoleTool } from '../tools/BlackHoleTool'
 import { FireTool } from '../tools/FireTool'
@@ -40,8 +40,8 @@ export class InputManager {
     this.tools = [
       new HammerTool(overlay, audio),
       new DrillTool(overlay, audio),
-      new AxeTool(overlay, audio),
-      new PaintballTool(overlay, audio),
+      new EggTool(overlay, audio),
+      new GunTool(overlay, audio),
       new ExplosionTool(overlay, audio),
       new BlackHoleTool(overlay, audio),
       new FireTool(overlay, audio),
@@ -69,6 +69,7 @@ export class InputManager {
     else this.achievements.recordHit(tool.name)
   }
   triggerMindBlown() { this.achievements.unlock('MIND_BLOWN') }
+  showGestureFeedback(emoji: string, name: string) { this.hud.showToast(`${emoji} ${name}`) }
 
   private setCursor(tool: Tool) {
     // Create an SVG-based cursor using the tool's emoji icon

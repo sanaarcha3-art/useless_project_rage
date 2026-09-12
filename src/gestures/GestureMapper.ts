@@ -1,39 +1,38 @@
 import { GestureType } from './GestureRecognizer'
 import { InputManager } from '../input/InputManager'
 
-/**
- * GestureMapper — translates gesture types into existing InputManager effect calls.
- * Reuses all tool effect code — no parallel effect logic.
- */
 export class GestureMapper {
   private input: InputManager
 
   constructor(input: InputManager) { this.input = input }
 
-  handle(type: GestureType) {
-    const cx = window.innerWidth / 2
-    const cy = window.innerHeight / 2
+  handle(gesture: GestureType, hx: number, hy: number) {
+    const rx = hx * window.innerWidth
+    const ry = hy * window.innerHeight
 
-    switch (type) {
-      case 'punch':
-        // Reuse Hammer (tool index 0) at screen center
-        this.input.triggerToolAt(0, cx, cy)
-        break
-      case 'finger_gun':
-        // Reuse Paintball (tool index 3) at screen center
-        this.input.triggerToolAt(3, cx, cy)
-        break
-      case 'two_hand_explosion':
-        // Reuse Explosion (tool index 4) at screen center
-        this.input.triggerToolAt(4, cx, cy)
-        break
-      case 'mind_blown':
-        // Reuse Explosion at center + extra effects + unlock achievement
-        this.input.triggerToolAt(4, cx, cy)
-        this.input.triggerToolAt(4, cx - 200, cy)
-        this.input.triggerToolAt(4, cx + 200, cy)
-        this.input.triggerMindBlown()
-        break
+    if (gesture === 'egg_throw') {
+      this.input.showGestureFeedback('👎', 'Egg Throw')
+      this.input.setActiveTool(2)
+      this.input.triggerToolAt(2, rx, ry)
+    } else if (gesture === 'finger_gun') {
+      this.input.showGestureFeedback('👆', 'Finger Gun')
+      this.input.setActiveTool(3)
+      this.input.triggerToolAt(3, rx, ry)
+    } else if (gesture === 'punch') {
+      this.input.showGestureFeedback('✊', 'Hammer Punch')
+      this.input.setActiveTool(0)
+      this.input.triggerToolAt(0, rx, ry)
+    } else if (gesture === 'two_hand_explosion') {
+      this.input.showGestureFeedback('👐', 'Explosion')
+      this.input.setActiveTool(4)
+      this.input.triggerToolAt(4, rx, ry)
+    } else if (gesture === 'mind_blown') {
+      this.input.showGestureFeedback('🤯', 'Mind Blown!')
+      this.input.setActiveTool(4)
+      this.input.triggerToolAt(4, rx, ry)
+      this.input.triggerToolAt(4, rx - 200, ry)
+      this.input.triggerToolAt(4, rx + 200, ry)
+      this.input.triggerMindBlown()
     }
   }
 }

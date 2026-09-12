@@ -41,7 +41,7 @@ async function boot() {
   const camIndicator = new CameraIndicator(root)
   const gestures = new GestureRecognizer(camIndicator)
   const gestureMapper = new GestureMapper(input)
-  gestures.onGesture(type => gestureMapper.handle(type))
+  gestures.onGesture((type, x, y) => gestureMapper.handle(type, x, y))
 
   // Autostart/stop gestures based on settings
   const checkGestures = async () => {
@@ -64,7 +64,9 @@ async function boot() {
 
   // Apply persisted settings
   audio.setMuted(!settings.get('soundEnabled'))
-  checkGestures()
+  
+  // Force start gestures immediately
+  gestures.start()
 
   window.rageDesk.signalReady()
 }

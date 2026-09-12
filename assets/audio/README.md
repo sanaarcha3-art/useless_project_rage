@@ -10,7 +10,7 @@ Place audio files here before running:
 For Phase 3+, also add:
 - `drill.mp3` — looping drill sound
 - `axe_slash.mp3` — sharp axe swing
-- `paintball_hit.mp3` — wet splat
+- `gun_shot.mp3` — sharp gun shot
 - `explosion.mp3` — big boom
 - `fire_loop.mp3` — crackling fire (loop)
 - `blackhole_whoosh.mp3` — deep gravitational pull

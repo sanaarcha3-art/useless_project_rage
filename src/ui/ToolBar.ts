@@ -25,6 +25,14 @@ export class ToolBar {
       this.slots.push(slot)
       this.el.appendChild(slot)
     }
+
+    // Settings Button
+    const setBtn = document.createElement('div')
+    setBtn.className = 'tb-slot tb-settings'
+    setBtn.innerHTML = `<span class="tb-icon">⚙️</span><span class="tb-name">Settings</span>`
+    setBtn.addEventListener('click', () => window.dispatchEvent(new Event('open-settings-ui')))
+    this.el.appendChild(setBtn)
+
     this.setActive(0)
     this.injectStyles()
   }

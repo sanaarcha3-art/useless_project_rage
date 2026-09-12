@@ -56,6 +56,7 @@ export class DrillTool extends BaseTool {
 
   endHold() {
     this.holding = false
+    this.audio.stop('drill')
     // Stamp final hole into damage layer
     if (this.drillGraphic) {
       this.overlay.damageLayer.drawInto(this.drillGraphic)
