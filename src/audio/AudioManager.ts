@@ -2,6 +2,7 @@ export type SoundId =
   | 'hammer_impact' | 'glass_crack'
   | 'drill' | 'axe_slash' | 'gun_shot'
   | 'explosion' | 'fire_loop' | 'blackhole_whoosh'
+  | 'paintball_hit'
 
 export class AudioManager {
   private static instance: AudioManager
