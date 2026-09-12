@@ -11,6 +11,7 @@
     "build": "tsc && vite build",
     "electron:dev": "node scripts/dev.mjs",
     "electron:build": "npm run build && electron-builder",
+    "electron:portable": "npm run build && electron-builder --win portable",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -39,8 +40,8 @@
       "output": "release"
     },
     "files": [
-      "dist/**/*",
-      "dist-electron/**/*",
+      "dist//*",
+      "dist-electron//*",
       "assets/**/*"
     ],
     "win": {
