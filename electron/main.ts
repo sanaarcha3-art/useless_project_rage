@@ -176,4 +176,5 @@ app.whenReady().then(() => {
 })
 
 app.on('will-quit', () => globalShortcut.unregisterAll())
-app.on('window-all-closed', (e: Event) => e.preventDefault())
+app.on('window-all-closed', () => {
+})
